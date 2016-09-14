@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>拜师与门派</title>
+</head>
+<script type="application/x-javascript">
+    addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+            },
+            false
+    );
+    function hideURLbar()
+    {
+        window.scrollTo(0,1);
+    }
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider").responsiveSlides({
+            auto: true,
+            manualControls: '#slider3-pager'
+        });
+    });
+</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop:$(this.hash).offset().top
+            },1200);
+        });
+    });
+</script>
+<body>
+<div class="header-banner" id="head">
+    <div class="slider">
+        <ul class="rslides" id="slider">
+            <li><a href=""><img src="images/高清壁纸1.jpg" alt=""></a>
+                <div class="caption">
+                    <h1>欢迎来到我们的世界！</h1>
+                </div>
+            </li>
+            <li><a href="众师父信息.html"><img src="images/3.PNG" alt=""></a>
+                <div class="caption">
+                    <h1>实战经验丰富的师父！</h1>
+                </div>
+            </li>
+            <li><a href="门派.html"><img src="images/门派万花.jpg" alt=""></a>
+                <div class="caption">
+                    <h1>集智慧、创新、实力于一体的门派团队！</h1>
+                </div>
+            </li>
+            <li><a href="项目首页.html"><img src="images/anni.jpg" alt=""></a>
+                <div class="caption">
+                    <h1>一份需求多个创意，不向雇主收取任何佣金！</h1>
+                </div>
+            </li>
+        </ul>
+        <ul id="slider3-pager">
+            <li><a href="#"><img src="images/高清壁纸2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/3%20-%20副本.PNG" alt=""></a></li>
+            <li><a href="#"><img src="images/门派万花1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/anni%20-%20副本.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="fixed-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">拜师与门派</a>
+            </div>
+            <div class="top-menu">
+                <span class="menu"><img src="images/nav.png" alt=""></span>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="glyphicon glyphicon-home"></i>我的首页</a></li>
+                    <li><a href="门派.html"><i class="glyphicon glyphicon-fire"></i>门派</a></li>
+                    <li><a href="众师父信息.html"><i class="glyphicon glyphicon-heart"></i>拜师</a></li>
+                    <li><a href="项目首页.html"><i class="glyphicon glyphicon-star"></i>商业项目</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i>网上答疑</a></li>
+                    <li><a href="个人资料.html"><i class="glyphicon glyphicon-user"></i>个人资料</a></li>
+                </ul>
+                <script>
+                    $("span.menu").click(function(){
+                        $(".top-menu ul").slideToggle("slow" , function(){
+                        });
+                    });
+                </script>
+
+                <script>
+                    $(document).ready(function() {
+                        var navoffeset=$(".header-bottom").offset().top;
+                        $(window).scroll(function(){
+                            var scrollpos=$(window).scrollTop();
+                            if(scrollpos >=navoffeset){
+                                $(".header-bottom").addClass("fixed");
+                            }else{
+                                $(".header-bottom").removeClass("fixed");
+                            }
+                        });
+
+                    });
+                </script>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+        </div>
+    </div>
+<div class="content">
+    <div class="training">
+        <div class="container">
+            <h3>已完成的优秀商业项目作品</h3>
+            <div class="training-grids">
+                <div class="col-md-4 training-grid">
+                    <div class="train">
+                        <a href="投标信息.html"><img src="images/商业项目图1.jpg" class="img-responsive" alt="/"></a>
+                        <h4>粉色时尚时装秀购物网站</h4>
+                        <p>Consec tetuer adipicing it. Praesebul lorem ipsum natoque penatibus et gnis dent monteiculu.Lorem ipsum dolor sit amet, concr adipi scing.esent </p>
+                        <!--<a href="项目首页.html" class="botton">更多</a>-->
+                    </div>
+                </div>
+                <div class="col-md-4 training-grid">
+                    <div class="train">
+                        <a href="投标信息.html"><img src="images/商业项目图2.jpg" class="img-responsive" alt="/"></a>
+                        <h4>黄色导航软件 </h4>
+                        <p>Consec tetuer adipicing it. Praesebul lorem ipsum natoque penatibus et gnis dent monteiculu.Lorem ipsum dolor sit amet, concr adipi scing.esent </p>
+                        <!--<a href="项目首页.html" class="botton">更多</a>-->
+                    </div>
+                </div>
+                <div class="col-md-4 training-grid">
+                    <div class="train">
+                        <a href="投标信息.html"><img src="images/商业项目图3.jpg" class="img-responsive" alt="/"></a>
+                        <h4>户外驴友探索探险</h4>
+                        <p>Consec tetuer adipicing it. Praesebul lorem ipsum natoque penatibus et gnis dent monteiculu.Lorem ipsum dolor sit amet, concr adipi scing.esent </p>
+                        <a href="项目首页.html" class="botton">更多</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonial" class="testimonials">
+        <div class="container">
+            <a href="众师父信息.html"><h3>优秀师父推荐</h3></a>
+            <div class="test-monials">
+                <div class="sreen-gallery-cursual">
+                    <link href="css/owl.carousel.css" rel="stylesheet">
+                    <script src="js/owl.carousel.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#owl-demo").owlCarousel({
+                                items : 1,
+                                lazyLoad : true,
+                                autoPlay : true,
+                                navigation : false,
+                                navigationText : false,
+                                pagination : true,
+                            });
+                        });
+                    </script>
+                    <div id="owl-demo" class="owl-carousel">
+                        <div class="item">
+                            <div class="col-md-2 testmonial-img">
+                                <a href="师父信息.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a>
+                            </div>
+                            <div class="col-md-10 testmonial-text">
+                                <a href="师父信息.html"><h4>John Doe</h4></a>
+                                <p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, at omnium scripta pro, ei mea oratio malorum forensibus. ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium ei mea oratio malorum forensibus.</p>
+
+
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 testmonial-img">
+                                <a href="师父信息.html"><img src="images/t2.jpg" class="img-responsive" alt=""/></a>
+                            </div>
+                            <div class="col-md-10 testmonial-text">
+                                <a href="师父信息.html"><h4>John Doe</h4></a>
+                                <p>If I don't feel confident about my body, I'm not going to sit at home and feel sorry for myself and not do something about it. It's all about taking action and not being lazy. So you do the work, whether it's fitness or whatever.</p>
+
+
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 testmonial-img">
+                                <a href="师父信息.html"><img src="images/t3.jpg" class="img-responsive" alt=""/></a>
+                            </div>
+                            <div class="col-md-10 testmonial-text">
+                                <a href="师父信息.html"><h4>John Doe</h4></a>
+                                <p>If I don't feel confident about my body, I'm not going to sit at home and feel sorry for myself and not do something about it. It's all about taking action and not being lazy. So you do the work, whether it's fitness or whatever.</p>
+
+
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2 testmonial-img">
+                                <a href="师父信息.html"><img src="images/平希老师.PNG" class="img-responsive" alt=""/></a>
+                            </div>
+                            <div class="col-md-10 testmonial-text">
+                                <a href="师父信息.html"><h4>平希</h4></a>
+                                <p>拥有10年软件开发、项目管理和教学经验，微软认证MCTS、MCPD，先后参与多个企业级信息系统开发。
+                                    担任过高级软件开发工程师、系统架构师、项目经理。曾参与的软件项目有西部数据研发项目、某知名大型外资企业供货商库存管理系统、
+                                    进销存系统等。发布多款应用，擅长Android, WinPhone 移动平台的应用和应用类项目开发。
+                                    </p>
+                           </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="news">-->
+        <!--<div class="container">-->
+            <!--<h3>新闻资讯</h3>-->
+            <!--<div class="news-grids">-->
+                <!--<div class="col-md-3 news-grid">-->
+                    <!--<h5><span class="glyphicon glyphicon-calendar date" aria-hidden="true"></span> : 09 feb 2016</h5>-->
+                    <!--<a href="#" class="mask">-->
+                        <!--<img src="images/新闻1.jpg" class="img-responsive zoom-img" alt=""></a>-->
+                    <!--<h4><a href="#">唐嫣</a></h4>-->
+                    <!--<p>近日，唐嫣的一组全新杂志图曝光，在此次的双封面中，唐嫣的造型分别展现出了都市摩登酷女郎的冷峻魅力以及霸道“糖总”气场。 </p>-->
+                <!--</div>-->
+                <!--<div class="col-md-3 news-grid">-->
+                    <!--<h5><span class="glyphicon glyphicon-calendar date" aria-hidden="true"></span> : 19 feb 2016</h5>-->
+                    <!--<a href="#" class="mask">-->
+                        <!--<img src="images/新闻2.jpg" class="img-responsive zoom-img" alt=""></a>-->
+                    <!--<h4><a href="#">唐嫣</a></h4>-->
+                    <!--<p>近日，唐嫣的一组全新杂志图曝光，在此次的双封面中，唐嫣的造型分别展现出了都市摩登酷女郎的冷峻魅力以及霸道“糖总”气场。 </p>-->
+                <!--</div>-->
+                <!--<div class="col-md-3 news-grid">-->
+                    <!--<h5><span class="glyphicon glyphicon-calendar date" aria-hidden="true"></span> : 29 sep 2016</h5>-->
+                    <!--<a href="#" class="mask">-->
+                        <!--<img src="images/新闻3.jpg" class="img-responsive zoom-img" alt=""></a>-->
+                    <!--<h4><a href="#">唐嫣</a></h4>-->
+                    <!--<p>近日，唐嫣的一组全新杂志图曝光，在此次的双封面中，唐嫣的造型分别展现出了都市摩登酷女郎的冷峻魅力以及霸道“糖总”气场。 </p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 news-grid">-->
+                <!--<h5><span class="glyphicon glyphicon-calendar date" aria-hidden="true"></span> : 07 jan 2016</h5>-->
+                <!--<a href="#" class="mask">-->
+                    <!--<img src="images/新闻4.jpg" class="img-responsive zoom-img" alt=""></a>-->
+                <!--<h4><a href="#">唐嫣</a></h4>-->
+                <!--<p>近日，唐嫣的一组全新杂志图曝光，在此次的双封面中，唐嫣的造型分别展现出了都市摩登酷女郎的冷峻魅力以及霸道“糖总”气场。 </p>-->
+            <!--</div>-->
+            <!--<div class="clearfix"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div class="footer-section">
+    <div class="container">
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+    </div>
+</body>
+</html>

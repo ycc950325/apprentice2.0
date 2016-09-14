@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <title>创建门派</title>
+    <style>
+        #body{
+            font-family: 华文彩云;
+            font-size: 35px;
+            font-weight: bold;
+            color: #3F8798;
+            /*margin-top: -45px;*/
+        }
+        #create{
+            background-color: #efecef;
+            height: 700px;
+            color: #0d0d0d;
+            margin-top: -50px;
+            width: 100%;
+        }
+        textarea{height: 80px;width:60%;}
+    </style>
+</head>
+<body>
+<!--<div id="Header">创建门派</div>-->
+<div id="create">
+    <div id="body">创建门派</div>
+    <div style="border: #c6cfcc 1px solid;height: 600px;background-color: #bbd9e2">
+    <h3>填写信息</h3>
+        <div style="padding: 30px">
+        <form class="form-horizontal"  >
+            <div class="form-group">    <!--和row的样式效果相似-->
+                <label class="col-md-2 text-right">上传门派logo</label>
+                <div class="col-md-4">
+                    <input type="file" id="exampleInputFile">
+                    <!--<input class="form-control" type="text">-->
+                </div>
+            </div>
+            <div class="form-group">    <!--和row的样式效果相似-->
+                <label class="col-md-2 text-right">门派名称：</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="text"style="color:black;">
+                </div>
+            </div>
+            <div class="form-group">    <!--和row的样式效果相似-->
+                <label class="col-md-2 text-right">门派介绍:</label>
+                <div class="col-md-4">
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 text-right">
+                    <input style="text-align: center" type="submit" value="确定创建" class="btn btn-success">
+                </label>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script>
+    $(function(){
+        $('.btn-success').click(function(){
+            if(confirm("确定是否要创建门派？"))
+            alert("门派创建成功");
+        });
+    });
+</script>
+</body>
+</html>

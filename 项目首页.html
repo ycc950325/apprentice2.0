@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <title>拜师与门派-商业项目</title>
+    <style>
+        #leftbtn{
+            position: fixed;
+            right: 10px;
+            top:100px;
+        }
+        iframe{
+            margin-top: 10px;
+            height: 3000px;
+        }
+        #changge{
+          position: fixed;
+            right: 10px;
+            top:200px;
+        }
+    </style>
+</head>
+<body>
+
+<iframe id="iframe" src="投标.html" scrolling="no" width=100%  style="border: 0"></iframe>
+
+
+<div class="btn-group btn-group-vertical" id="changge">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" onclick="click1()">投标</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" onclick="click2()">我的投标</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" onclick="click3()">招标</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" onclick="click4()">我的招标</button>
+    </div>
+
+</div>
+<!--<div class="btn-group btn-group-vertical" id="leftbtn">-->
+    <!--<button type="button" class="btn btn-default">我要投标</button>-->
+    <!--<button type="button" class="btn btn-default">我的投标</button>-->
+    <!--<button type="button" class="btn btn-default">我要招标</button>-->
+    <!--<button type="button" class="btn btn-default">我的招标</button>-->
+<!--</div>-->
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script>
+    function click1(){
+        var  iframe=document.getElementById("iframe");
+        iframe.src="投标.html";
+        $("body").animate({scrollTop:0});
+    }
+    function click2(){
+        var  iframe=document.getElementById("iframe");
+        iframe.src="我的投标.html";
+
+        $("body").animate({scrollTop:0});
+    }
+    function click3(){
+        var  iframe=document.getElementById("iframe");
+        iframe.src="招标.html";
+        $("body").animate({scrollTop:0});
+    }
+    function click4(){
+        var  iframe=document.getElementById("iframe");
+        iframe.src="我的招标.html";
+        $("body").animate({scrollTop:0});
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>门派具体信息</title>
+    <style>
+        /*#Header{*/
+            /*font-family: 华文彩云;*/
+            /*font-size: 35px;*/
+            /*font-weight: bold;*/
+            /*color: #3F8798;*/
+            /*margin-top: -50px;*/
+        /*}*/
+        #scinfoBody{
+            margin-top: -4px;
+            background-color:#1CBBB4 ;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="Header">门派信息</div>-->
+<div id="scinfoBody" class="panel panel-default">
+    <div class="panel-heading text-center">
+        <img src="..." alt="..." class="img-circle">
+    </div>
+    <div class="panel-body">
+       <h3>简介</h3>
+        <div id="scinfo">
+            <p>门派名称：</p>
+            <p>创建人数：</p>
+            <p>等级：</p>
+            <p>接过的商业项目：</p>
+            <p>详细信息：</p>
+            <p>评论：</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="..." alt="..." class="img-circle">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">用户名</h4>
+                            微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城
+                            微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城
+                            <div class="media-bottom">
+                                <div class="noticecontent" class="test_box" contenteditable="true" style="border: 1px solid gainsboro"><br /><p></p></div>
+                                <input type="button" value="回复" class="pull-right"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="..." alt="..." class="img-circle">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">用户名</h4>
+                            微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城
+                            微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城微微一笑很倾城
+                            <div class="media-bottom">
+                                <div class="noticecontent" class="test_box" contenteditable="true" style="border: 1px solid gainsboro"><br /><p></p></div>
+                            <input type="button" value="回复" class="pull-right"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script>
+    $(function(){
+        $('.pull-right').click(function(){
+            alert('回复成功');
+        });
+    });
+</script>
+</body>
+</html>

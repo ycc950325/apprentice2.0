@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>管理员界面</title>
+    <style type="text/css">
+        #head1{
+            margin-top: 20px;
+        }
+        #scsearch{
+            margin-left: 50%;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: #2aabd2">
+    <ul class="nav nav-pills" role="tablist">
+    <li role="presentation"><a href="#" id="userInfo">用户管理</a></li>
+    <li role="presentation"><a href="#" id="masterInfo">门派管理</a></li>
+    <li role="presentation"><a href="#" id="busproInfo">项目管理</a></li>
+</ul>
+</div>
+<div id="head1">
+    <div class="input-group pull-right" id="scsearch">
+        <input type="text" class="form-control" placeholder="" style="position: relative;top:1px">
+        <span class="input-group-btn">
+             <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+         </span>
+    </div>
+</div>
+<div style="width: 100%">
+    <table class="table table-striped" style="text-align: center ;width: 100%" id="user">
+    <thead>
+    <td>用户ID</td>
+    <td>用户名</td>
+    <td>密码</td>
+    <td>所属门派</td>
+    <td>所属师父</td>
+    <td>所持项目</td>
+    <td>身份</td>
+    <td>经验值</td>
+    <td>金币</td>
+    <td>操作</td>
+    </thead>
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>tom</td>
+        <td>********</td>
+        <td>峨眉派</td>
+        <td>张水平</td>
+        <td>html5</td>
+        <td>徒弟</td>
+        <td>12</td>
+        <td>30</td>
+        <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+    </tr>
+    </tbody>
+</table >
+    <table class="table table-striped" style="text-align: center" id="master">
+        <thead>
+        <td>头像</td>
+        <td>门派ID</td>
+        <td>门派名称</td>
+        <td>门派人数</td>
+        <td>等级</td>
+        <td>创建人</td>
+        <td>评价</td>
+        <td>创建时间</td>
+        <td>操作</td>
+        </thead>
+        <tbody>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>101</td>
+            <td>峨眉派</td>
+            <td>50</td>
+            <td>5</td>
+            <td>杨某</td>
+            <td>※※※※</td>
+            <td>2002-10-09</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped" style="text-align: center" id="buspro">
+        <thead>
+        <td>项目ID</td>
+        <td>项目名</td>
+        <td>项目内容</td>
+        <td>赏金</td>
+        <td>时间</td>
+        <td>用户ID</td>
+        <td>附件</td>
+        <td>类型</td>
+        <td>操作</td>
+        </thead>
+        <tbody>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>HTML5</td>
+            <td>。。。</td>
+            <td>4000</td>
+            <td>7</td>
+            <td>002</td>
+            <td>....</td>
+            <td>h5</td>
+            <td><button class="btn btn-success"><span class="glyphicon glyphicon-edit"></span>编辑</button><button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span>删除</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script>
+    $(function(){
+        $("#master").hide();
+        $("#buspro").hide();
+        $("#userInfo").click(function(){
+            $("#user").show();
+            $("#master").hide();
+            $("#buspro").hide();
+
+        })
+        $("#masterInfo").click(function(){
+            $("#master").show();
+            $("#buspro").hide();
+            $("#user").hide();
+        })
+        $("#busproInfo").click(function(){
+            $("#master").hide();
+            $("#buspro").show();
+            $("#user").hide();
+        })
+    })
+</script>
+
+</body>
+</html>

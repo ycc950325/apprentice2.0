@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <style>
+        table{
+            text-align: center;
+        }
+        /*#con{*/
+            /*margin: 0 auto;*/
+            /*width: 480px;*/
+            /*margin-top: 50px;*/
+        /*}*/
+        body{
+            background-color: #1CBBB4;
+            padding-top: 80px;
+        }
+    </style>
+    <title>招标</title>
+</head>
+<body>
+<div id="biggest">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 ptl" id="con">
+            <div class="panel panel-default panel-page">
+                <div style="height: 40px">
+                    <span style=" font-family: 华文彩云;font-size: 25px;font-weight: bold;color: #3F8798;line-height: 40px;">请认真填写招标信息</span>
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                    <tr>
+                        <td>项目名称：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>项目类型：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>价格：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>联系方式：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>需求文件：</td>
+                        <td style="text-align: left"><input type="file" id="exampleInputFile"><p id="wancheng"style="width:200px;margin:12px;background:gray"><div  style="background:green;width:0">0%</div></p><a id="wenjie" href="">...</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="background:#1cbbb4;color:#fff;" type="submit" class="btn btn-fat btn-large"onclick="sure()">确定</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function sure(){
+        var t=confirm('你确定提交吗？');
+        if(t){
+            alert('你的招标已经成功提交');
+        }
+    }
+</script>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/header.js"></script>-->
+</body>
+</html>

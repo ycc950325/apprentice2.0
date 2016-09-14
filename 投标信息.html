@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <style>
+        table{
+            text-align: center;
+        }
+        body{
+            background-color: #1CBBB4;
+        }
+    </style>
+    <title>投标</title>
+</head>
+<body>
+<div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 ptl"id="con">
+            <div class="panel panel-default panel-page">
+                <div style="height: 40px">
+                    <span style=" font-family: 华文彩云;font-size: 25px;font-weight: bold;color: #3F8798;line-height: 40px;">请认真填写投标信息</span>
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                    <tr>
+                        <td colspan="2">你选择的投标项目是XXX，请认真填写以下信息</td>
+                    </tr>
+                    <tr>
+                        <td>投标价格：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>完成期限：</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>展示文件：</td>
+                        <td style="text-align: left"><input type="file" id="exampleInputFile"><p id="wancheng"style="width:200px;margin:12px;background:gray"><div  style="background:green;width:0">0%</div></p><a id="wenjie" href="">.....</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="background:#1cbbb4;color:#fff;" type="submit" class="btn btn-fat btn-large"onclick="sure()">确定</button></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function sure(){
+        var t=confirm('你确定提交吗？');
+        if(t){
+            alert('你的投标已经成功提交');
+        }
+    }
+</script>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/header.js"></script>-->
+</body>
+</html>
